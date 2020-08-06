@@ -1,15 +1,16 @@
 {
-  "name": "frontend-starter",
-  "version": "1.0.0",
+  "name": "react-redux-bootstrap-webpack-starter-front",
+  "version": "7.0.2",
+  "author": "Erwan DATIN (MacKentoch)",
   "license": "MIT",
   "description": "react js + redux + react router + hot reload + devTools + bootstrap + webpack starter",
   "main": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byte-up/frontend-starter"
+    "url": "git+https://github.com/MacKentoch/react-redux-bootstrap-webpack-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/byte-up/frontend-starter/issues"
+    "url": "https://github.com/MacKentoch/react-redux-bootstrap-webpack-starter/issues"
   },
   "engines": {
     "node": ">=12",
@@ -18,7 +19,7 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
     "test:coverage": "cross-env NODE_ENV=test jest --coverage",
-    "clean-docs": "rimraf ./docs/*",
+    "clean-docs": "rimraf ../build/*",
     "predev": "npm run clean-docs",
     "dev": "cross-env NODE_ENV=dev webpack --config webpack.dev.config.js",
     "postdev": "react-snap",
@@ -30,7 +31,7 @@
     "start": "cross-env NODE_ENV=dev webpack-dev-server --config ./webpack.hot.reload.config.js"
   },
   "reactSnap": {
-    "source": "./docs"
+    "source": "../build"
   },
   "keywords": [
     "react",

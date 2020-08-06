@@ -18,7 +18,7 @@ const config = {
   mode: 'production',
   entry: { app: indexFile },
   output: {
-    path: path.join(__dirname, '/../docs/assets'),
+    path: path.join(__dirname, '/../build/assets'),
     publicPath: '/assets/',
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
